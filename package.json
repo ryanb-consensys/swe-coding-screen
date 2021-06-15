@@ -1,0 +1,32 @@
+{
+  "name": "swe-coding-screen",
+  "description": "SWE Coding Screen",
+  "license": "(c) Copyright 2021 Decrypt Media, Inc. all rights reserved.",
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ryanb-consensys/swe-coding-screen.git"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest --detectOpenHandles",
+    "lint": "eslint . --ext .js --fix"
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "jest": "^27.0.4",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
+  }
+}

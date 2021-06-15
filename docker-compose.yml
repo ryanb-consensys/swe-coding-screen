@@ -1,0 +1,14 @@
+services:
+  api:
+    image: node:12-alpine
+    restart: always
+    working_dir: /app
+    command: ["npm", "run", "dev"]
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app:default
+    environment:
+      NODE_ENV: development
+      PORT: "3000"
+
