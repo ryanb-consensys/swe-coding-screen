@@ -41,7 +41,6 @@ GET `/statuses(/:userId)?`
 
 ## Helper scripts
 
-
 There is a test suite included in this repo, which you can run with `npm test`.
 
 You can run a local development server with `docker-compose up`. Nodemon is used
@@ -49,6 +48,7 @@ to restart the node server each time you edit the source files. Feel free to use
 node instead of nodemon if you find this behavior annoying.
 
 ## Submitting your response
+
 Create a submission branch and open a PR in the Github repo. This will be used for the code review with the interview team. 
 
 If you want to experiment with alternative features or implementations but keep a reference to your original working implementation, feel free to open multiple PRs.
