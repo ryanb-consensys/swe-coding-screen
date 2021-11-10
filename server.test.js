@@ -32,8 +32,8 @@ describe('POST /statuses', () => {
       createUser().then(({ userId, userSecret }) => {
         const statusMessage = 'This is a test status';
         return agent
-          .post('/statuses')
           .auth(userId, userSecret)
+          .post('/statuses')
           .send({ userId, statusMessage })
           .expect('Content-Type', /json/)
           .expect(200);

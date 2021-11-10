@@ -13,6 +13,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "jest --detectOpenHandles",
+    "test:watch": "jest --detectOpenHandles --watch",
     "lint": "eslint . --ext .js --fix"
   },
   "devDependencies": {
